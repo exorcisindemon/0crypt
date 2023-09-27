@@ -85,8 +85,8 @@ function EncryptionFieldHSC() {
 
   return (
     <main className="bg-zinc-100 p-8 flex flex-col gap-8 items-start justify-center w-full lg:w-[30%] h-full rounded-t-none rounded-b-2xl lg:rounded-l-none lg:rounded-r-2xl">
-      <h1 className="text-zinc-900 font-bold text-2xl lg:text-4xl leading-relaxed lg:leading-relaxed tracking-tight">
-        Enter Keywords ..
+      <h1 className="text-zinc-900 font-bold text-lg lg:text-2xl leading-relaxed lg:leading-relaxed tracking-tight">
+        Provide your key here ..
       </h1>
       <div className="flex flex-row gap-4 w-full items-center justify-between">
         <input
@@ -104,14 +104,14 @@ function EncryptionFieldHSC() {
           <Unicons.UilArrowRight className="hidden lg:flex" size="20" />
         </button>
       </div>
-      <h1 className="bg-zinc-200 px-8 py-4 w-full rounded-2xl text-zinc-900 font-bold text-sm lg:text-base leading-relaxed tracking-tight overflow-y-auto">
+      <p className="bg-zinc-200 px-8 py-4 w-full rounded-2xl text-zinc-900 font-bold text-sm lg:text-base leading-relaxed tracking-tight overflow-auto">
         Encryption results ..
         <br />
         <br />{" "}
-        <span className="font-medium text-sm lg:text-base leading-relaxed tracking-tight overflow-y-auto">
+        <span className="font-medium text-sm lg:text-base leading-relaxed tracking-tight overflow-auto">
           {encryptedText}
         </span>
-      </h1>
+      </p>
     </main>
   );
 }
