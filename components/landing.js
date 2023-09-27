@@ -19,7 +19,7 @@ export default function Landing() {
       </p>
       <div className="flex flex-col lg:flex-row gap-4 w-full items-center justify-between">
         <Link
-          className="transition-all bg-zinc-800 hover:bg-zinc-700 flex flex-row gap-2 items-center w-full lg:w-auto px-8 py-4 rounded-2xl text-zinc-100 font-medium text-sm lg:text-base leading-relaxed tracking-tight"
+          className="transition-all bg-zinc-800 hover:bg-zinc-700 flex flex-row gap-2 items-center justify-center lg:justify-start w-full lg:w-auto px-8 py-4 rounded-2xl text-zinc-100 font-medium text-sm lg:text-base leading-relaxed tracking-tight"
           href="/hsc/encrypt"
         >
           <Unicons.UilAsterisk className="flex lg:hidden" size="18" />
@@ -27,7 +27,7 @@ export default function Landing() {
           Encrypt
         </Link>
         <Link
-          className="transition-all bg-zinc-800 hover:bg-zinc-700 flex flex-row gap-2 items-center w-full lg:w-auto px-8 py-4 rounded-2xl text-zinc-100 font-medium text-sm lg:text-base leading-relaxed tracking-tight"
+          className="transition-all bg-zinc-800 hover:bg-zinc-700 flex flex-row gap-2 items-center justify-center lg:justify-start w-full lg:w-auto px-8 py-4 rounded-2xl text-zinc-100 font-medium text-sm lg:text-base leading-relaxed tracking-tight"
           href="/hsc/decrypt"
         >
           <Unicons.UilKeyholeSquare className="flex lg:hidden" size="18" />
