@@ -85,9 +85,9 @@ function EncryptionFieldHSC() {
 
   return (
     <main className="bg-zinc-100 p-8 flex flex-col gap-8 items-start justify-center w-full lg:w-[30%] h-full rounded-t-none rounded-b-2xl lg:rounded-l-none lg:rounded-r-2xl">
-      <h1 className="text-zinc-900 font-bold text-lg lg:text-2xl leading-relaxed lg:leading-relaxed tracking-tight">
+      <p className="text-zinc-900 font-bold text-lg lg:text-2xl leading-relaxed lg:leading-relaxed tracking-tight">
         Provide your key here ..
-      </h1>
+      </p>
       <div className="flex flex-row gap-4 w-full items-center justify-between">
         <input
           className="transition-all bg-zinc-800 hover:bg-zinc-700 px-8 py-4 w-[80%] lg:w-full rounded-2xl text-zinc-100 font-medium text-sm lg:text-base leading-relaxed tracking-tight"
