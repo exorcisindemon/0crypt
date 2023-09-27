@@ -5,7 +5,7 @@ import * as Unicons from "@iconscout/react-unicons";
 export default function InfDecryptHSC() {
   return (
     <main className="bg-zinc-900 p-8 flex flex-col gap-8 items-start justify-center w-full lg:w-[30%] h-full rounded-t-2xl rounded-b-none lg:rounded-l-2xl lg:rounded-r-none">
-      <h1 className="text-purple-300 font-bold text-2xl lg:text-4xl leading-relaxed lg:leading-relaxed tracking-tight">
+      <h1 className="text-purple-300 font-bold text-lg lg:text-2xl leading-relaxed lg:leading-relaxed tracking-tight">
         Homophonic Substitution Cipher Decryption
       </h1>
       <div className="flex flex-col lg:flex-row gap-4 w-full items-center justify-between">

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import InfDecryptHSC from "@/components/hsc/decrypt";
+import TableGuide from "@/components/hsc/tableGuide";
 
 import * as Unicons from "@iconscout/react-unicons";
 
@@ -10,6 +11,7 @@ export default function DecryptHSC() {
     <main className="bg-black p-8 lg:p-32 flex flex-col lg:flex-row w-full h-full lg:h-screen items-center justify-center">
       <InfDecryptHSC />
       <DecryptionFieldHSC />
+      <TableGuide />
     </main>
   );
 }
@@ -82,7 +84,7 @@ function DecryptionFieldHSC() {
   };
 
   return (
-    <main className="bg-zinc-100 p-8 flex flex-col gap-8 items-start justify-center w-full lg:w-[30%] h-full rounded-t-none rounded-b-2xl lg:rounded-l-none lg:rounded-r-2xl">
+    <main className="bg-zinc-100 pb-0 px-8 pt-8 lg:p-8 flex flex-col gap-8 items-start justify-center w-full lg:w-[30%] h-full rounded-t-none rounded-b-none lg:rounded-l-none lg:rounded-r-none">
       <p className="text-zinc-900 font-bold text-lg lg:text-2xl leading-relaxed lg:leading-relaxed tracking-tight">
         Provide your key here ..
       </p>
