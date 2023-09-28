@@ -1,9 +1,3 @@
-"use client";
-
-import InfDecryptHSC from "@/components/hsc/decrypt";
-
-import * as Unicons from "@iconscout/react-unicons";
-
 export default function TableGuide() {
   const data = [
     { plaintext: "A", ciphertext: "BU, CP, AV, AH, BT, BS, CQ" },
@@ -39,36 +33,41 @@ export default function TableGuide() {
 
   return (
     <div className="bg-zinc-100 p-8 flex flex-col gap-8 items-start justify-center w-full lg:w-[30%] h-full rounded-t-none rounded-b-2xl lg:rounded-l-none lg:rounded-r-2xl">
-      <p className="text-zinc-900 font-bold text-lg lg:text-2xl leading-relaxed lg:leading-relaxed tracking-tight">
-        Table
-      </p>
+      <div className="flex flex-col gap-2 items-start">
+        <p className="text-zinc-900 font-bold text-lg lg:text-2xl leading-relaxed lg:leading-relaxed tracking-tight">
+          Guide
+        </p>
+        <p className="text-zinc-700 font-semibold text-sm lg:text-base leading-relaxed lg:leading-relaxed tracking-tight">
+          This is a table that contains pairs of plaintext and ciphertext, which
+          are used in the process of encryption or decryption.
+        </p>
+      </div>
       <div className="overflow-auto">
         <table>
           <thead>
             <tr>
-              <th className="text-start pr-4 pb-4 text-zinc-900 font-bold text-sm lg:text-base leading-relaxed tracking-tight">Plaintext</th>
-              <th className="text-start pb-4 text-zinc-900 font-bold text-sm lg:text-base leading-relaxed tracking-tight">Ciphertext</th>
+              <th className="text-start pr-2 pb-2 text-zinc-900 font-bold text-sm lg:text-base leading-relaxed tracking-tight">
+                Plaintext
+              </th>
+              <th className="text-start pb-2 text-zinc-900 font-bold text-sm lg:text-base leading-relaxed tracking-tight">
+                Ciphertext
+              </th>
             </tr>
           </thead>
           <tbody>
             {data.map((item, index) => (
               <tr key={index}>
-                <td className="text-start font-medium text-sm lg:text-base leading-relaxed tracking-tight">{item.plaintext}</td>
-                <td className="text-start font-medium text-sm lg:text-base leading-relaxed tracking-tight">{item.ciphertext}</td>
+                <td className="text-start font-medium text-sm lg:text-base leading-relaxed tracking-tight">
+                  {item.plaintext}
+                </td>
+                <td className="text-start font-medium text-sm lg:text-base leading-relaxed tracking-tight">
+                  {item.ciphertext}
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
     </div>
-  );
-}
-
-function List({ plaintext, ciphertext }) {
-  return (
-    <tr>
-      {plaintext}
-      <td>{ciphertext}</td>
-    </tr>
   );
 }
